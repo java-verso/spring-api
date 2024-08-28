@@ -1,10 +1,36 @@
 services:
   - type: web
-    name: spring-deploy-test-iac
+    name: spring-deploy-iac-dev
     runtime: docker 
-    repo: https://github.com/luizbrito6/spring-deploy-test
+    repo: https://github.com/java-verso/spring-api
     plan: free
-    branch: master 
+    branch: dev 
+    envVars:
+      - key: DB_HOST
+        sync: false
+      - key: DB_PW
+        sync: false
+      - key: DB_USER
+        sync: false
+  - type: web
+    name: spring-deploy-iac-qa
+    runtime: docker 
+    repo: https://github.com/java-verso/spring-api
+    plan: free
+    branch: qa 
+    envVars:
+      - key: DB_HOST
+        sync: false
+      - key: DB_PW
+        sync: false
+      - key: DB_USER
+        sync: false
+  - type: web
+    name: spring-deploy-iac-prod
+    runtime: docker 
+    repo: https://github.com/java-verso/spring-api
+    plan: free
+    branch: main
     envVars:
       - key: DB_HOST
         sync: false
