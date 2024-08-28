@@ -1,0 +1,10 @@
+name: Deploy dev
+
+on:
+  push:
+    branchs:
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
