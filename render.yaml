@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: spring-deploy-test-iac
+    runtime: docker 
+    repo: https://github.com/luizbrito6/spring-deploy-test
+    plan: free
+    branch: master 
+    envVars:
+      - key: DB_HOST
+        sync: false
+      - key: DB_PW
+        sync: false
+      - key: DB_USER
+        sync: false
