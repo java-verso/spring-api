@@ -1,0 +1,10 @@
+name: Deploy QA
+
+on:
+  push:
+    branchs:
+      - qa
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
