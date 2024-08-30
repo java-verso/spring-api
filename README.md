@@ -98,3 +98,8 @@ Este documento descreve o fluxo de trabalho de Git adotado por nossa equipe para
 <p align="center">
   <img src="docs/images/bordao.png" alt="Tela do Projeto" width="600" />
 </p>
+
+
+
+
+https://excalidraw.com/#json=-0fh5LR_T09UYDTJxBEk3,BQninHaggg3IUHqThEb_iQ
